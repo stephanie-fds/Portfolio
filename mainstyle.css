@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+html {
+    font-size: 16px; /* Valeur par défaut des navigateurs */
+}
+
+@font-face {
+    font-family: NTfabulous ;
+    src: url(nt_fabulous/NT\ Fabulous\ \(only\ personal\ use\).otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(Lato/Lato-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.meow-script-regular {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.krona-one-regular {
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --primary-light-color: #DED7EB;  
+    --primary-medium-color: #8283A8;
+    --primary-dark-color: #26283F;  
+    --secondary-blue-color: #391ADE; 
+    --secondary-purple-light-color: #7D3EFF;
+    --secondary-purple-dark-color: #5318CC;
+    --secondary-purple-lighter-flash: #7D3EFF;
+    --tertiray-black: #121212;
+    --tertiary-orange: #FF7B00;
+    --background-dark: #1C1D2D;
+    --background-darker: #161729;
+    --color-system-valid: #C4FCF0;
+    --accent-color: #e74c3c; 
+    background-color: var(--background-darker);
+}
+
+.gradient-text {
+    background-image: linear-gradient(45deg,#7D3EFF, #391ADE);
+    background-clip: text;
+    background-size: 100% 100%; /* Ajuste la taille du gradient */
+    background-position: center; /* Centre le gradient */
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Évite que le gradient prenne toute la largeur */
+}
+
+
+h1{
+    font-size: 3rem; color: var(--primary-light-color); font-family: "Meow Script";
+}
+
+h2{
+    font-size: 2.5rem; color: var(--primary-medium-color); font-family: "NTfabulous";
+}
+
+h3{
+    font-size: 2.5rem; color: var(--primary-light-color); font-family: "NTfabulous";
+}
+
+h4{
+    font-size: 1.5rem; color: var(--primary-light-color); font-family: "Krona One"
+}
+
+h4 .mon-service{
+    color: var(--primary-light-color);
+}
+
+h5{
+    font-size: 1rem; color: var(--primary-light-color); font-family: "Krona One"; line-height: 150%;
+}
+/* H6 - Même CSS que le body, utilisé dans les aptitutes-cards */
+h6{
+    font-size: 1rem; color: var(--secondary-purple-lighter-flash); font-family: "Lato"; 
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem; color: var(--primary-light-color); font-family: "Lato";
+    gap: 64px;
+    padding: 2vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+p{
+    max-width: 977px; 
+    color: var(--primary-medium-color);
+    line-height: 150%;
+}
+
+p span{
+        font-size: 1rem; color: var(--primary-medium-color); font-family: "Krona One"
+}
+
+.primary-btn{
+    padding: 16px 24px;
+    background-image: linear-gradient(45deg,#7D3EFF, #391ADE);
+    border-style: none;
+    border-radius: 90px;
+    font-family: "Lato-Bold";
+    width: fit-content;
+}
+
+.primary-btn:hover{
+    background-image: linear-gradient(45deg,#391ADE,#7D3EFF);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* ADAPTATION TAILLE DEVICE REFERENCE : iPad Pro W:1024PX */
+
+@media screen and (max-width: 1024px){
+
+
+    body {
+        margin: 24px;
+        padding: 0px;
+        gap: 32px;
+    }
+}
+
+
+/* ADAPTATION TAILLE MOBILE REFERENCE : Android medium W:700PX */
+
+@media screen and (max-width: 700px){
+
+    body {
+        margin: 0px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.5rem; 
+    }
+    
+    h4{
+        font-size: 1rem; 
+    }
+    
+    h5{
+        font-size: 0.8rem; 
+    }
+    /* H6 - Même CSS que le body, utilisé dans les aptitutes-cards */
+    h6{
+        font-size: 1rem; color: var(--secondary-purple-lighter-flash); font-family: "Lato"; 
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    h2{
+        font-size: 1.5rem; 
+    }
+}

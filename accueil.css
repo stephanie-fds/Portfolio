@@ -1,0 +1,589 @@
+#lilly{
+    width: 748px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 1vw;
+    gap: 5rem;
+}
+
+.mon-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+p.state-dispo{
+    font-family: Lato-Bold;
+    color: var(--color-system-valid)
+}
+
+section{
+    width: auto;
+}
+
+.accroche h5{
+    max-width: 1260px;
+    text-align: center;
+    padding: 0px 24px 0px 24px;
+}
+.name-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 480px;
+    gap: 40px;
+}
+
+.bandeauProfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.wrapper-profil{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.wrapper-profil p{
+    max-width: 590px;
+}
+
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dispo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 24px;
+    width: fit-content;
+}
+
+button.social-links{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    color: var(--primary-light-color);
+    background-color: var(--background-dark);
+    border-style: solid; border-radius: 300px; border-color: var(--secondary-purple-lighter-flash); border-width: 1px;
+    padding: 24px;
+    font-size: 0px;
+}
+
+button.social-links:hover{
+    border-color: var(--tertiary-orange);
+    font-size: 1rem;
+    gap: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+#cv{
+    border-color: var(--secondary-blue-color);
+}
+
+
+
+
+/* --------------Formulaire---------------- */
+
+
+.block-formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 80px; ;
+}
+
+.form{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+}
+
+.form-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.civilité{
+
+    min-width: 280px;
+    /* width: max-content; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* flex-basis: auto; */
+    padding: 8px;
+    border-style: solid; border-color: transparent; border-bottom-color: #7D3EFF; border-width: 1px;
+}
+
+.form-wrap input, textarea{
+    background-color: transparent;
+    border: none;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    padding: 8px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--primary-light-color);
+}
+
+#name:focus, #email:focus, #phone:focus, #entreprise:focus, #message:focus {
+    outline: none; /* supprime le contour au focus */
+}
+
+
+label{
+    font-size: 1rem; color: var(--primary-medium-color); font-family: "Krona One";
+    padding-bottom: 16px;
+}
+
+.form-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.gradient-text-2{
+    background-image: linear-gradient(90deg, #391ADE 0%, #7D3EFF 35%, #e74c3c 100%);
+    background-clip: text;
+    background-size: 100% 100%; /* Ajuste la taille du gradient */
+    background-position: center; /* Centre le gradient */
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Évite que le gradient prenne toute la largeur */
+}
+
+
+/* ------------LE MENU ACCORDEON------------- */
+
+.a-propos{
+    margin: 32px 24px 32px 24px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 1280px;
+    margin:  auto;
+}
+.accordion-item {
+    display: flex;
+    padding: 16px;
+    flex-direction: row;
+    border-bottom: 1px solid #AD96CA;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.accordion-button {
+    width: 72px;
+    height: 72px;
+    color: var(--primary-light-color);
+    background-color: var(--background-dark);
+    border-style: solid;
+    border-radius: 300px;
+    border-color: var(--secondary-purple-lighter-flash);
+    border-width: 1px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+}
+
+.active {
+    max-height: 200px;
+    padding: 10px;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    gap: 16px
+}
+
+/* ------------ACCORDEON 1 & 2------------- */
+
+.subtitle-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+
+.mon-service p{
+    color: var(--primary-light-color);
+}
+
+.mon-service {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 255px;  /* PAGE ACCUEIL Taille du p le plus long : pour que le wrap aligne parfaitement tous les elements */
+}
+
+/* ------------ ACCORDEON 3 ------------- */
+
+#logiciel{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#logiciel .wrapper-content{
+    max-width: 610px;
+    margin: 32px 16px 0px 16px ;
+    padding: 16px;
+    height: fit-content;
+    border-style: solid;
+    border-color:#391ADE;
+    border-width: 0px 0px 0px 2px ;
+}
+
+.text-logiciel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    gap: 8px;
+}
+
+.text-logiciel p {
+    color: var(--primary-light-color);
+}
+
+.wrapper-logiciels{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    padding-top: 8px;
+}
+
+.text-logiciel .logo{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+
+/* ------------CAROUSSEL------------- */
+
+#mes-projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('Images/BG-section.png');
+    width: fit-content;
+}
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding: 0px 60px 120px 60px;
+    margin: 0px 80px 0px 80px;
+}
+
+.projet h3{
+    padding: 120px 0px 120px 0px;
+}
+
+.projet h5{
+    font-family: "NTfabulous";
+    font-size: 1.5rem;
+}
+
+#crs-freetime{
+    padding-bottom: 32px;
+}
+
+#crs-freetime h6{
+    background-image: linear-gradient(45deg,#ff942f, #ff409c);
+    background-clip: text;
+    background-size: 100% 100%; /* Ajuste la taille du gradient */
+    background-position: center; /* Centre le gradient */
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Évite que le gradient prenne toute la largeur */
+}
+
+.fin-projets{
+    padding: 56px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-fin{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 941px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    gap: 16px;
+}
+.carousel-container {
+    display: flex;
+    width: 100%;
+    max-width: 941px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 539px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titre {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.text-projet {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.text-projet img {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+    /* margin-top: 10px; */
+    
+}
+.prev, .next {
+    width: 72px;
+    height: 72px;
+    color: var(--primary-light-color);
+    background-color: var(--background-dark);
+    border-style: solid;
+    border-radius: 300px;
+    border-color: var(--secondary-purple-lighter-flash);
+    border-width: 1px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--secondary-purple-light-color);
+    color: var(--background-dark)
+} 
+
+
+
+
+/* ADAPTATION TAILLE TABLETTE REFERENCE : iPad Pro W:1024PX */
+
+@media screen and (max-width: 1024px){
+
+    header{
+        gap: 0px;
+        padding-top: 24px;
+    }
+    
+    .mon-header{
+        flex-direction: column;
+        gap: 60px;
+        margin: 24px 0px 24px 0px;
+        height: 554px;
+        justify-content: end;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-links{
+        padding-bottom: 32px;
+    }
+
+    .wrapper-profil {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .projet{
+        padding: 80px 40px 80px 40px;
+        margin: 0px 40px 0px 40px;
+    }
+
+    .projet h3{
+        padding-bottom: 80px;
+    }
+
+}
+
+
+/* ADAPTATION TAILLE MOBILE REFERENCE : Android medium W:700PX */
+
+
+@media screen and (max-width: 700px){
+
+/* -------------------------- Mobile - HEADER  ---------------------------------- */
+
+    header{
+        gap: 32px;
+    }
+    .mon-header{
+        height: 580px;
+        justify-content: end;
+        align-items: center;
+        
+    }
+
+    #lilly{
+        width: auto;
+    }
+
+    .name-title {
+        gap: 16px;
+        min-width: auto;
+    }
+
+    .card-links{
+        gap: 16px;
+    }
+
+
+    button.social-links{
+        padding: 16px;
+    }
+
+    .tab-button, .tab-button.active{
+        font-size: 1rem;
+    }
+
+    .accordion-button, .prev, .next{
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+        transition: transform 0.3s ease;
+    }
+
+/* -------------------------- Mobile -  Section mes projets  ---------------------------------- */
+
+    .projet{
+        margin: 0;
+        padding: 0px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    #mes-projets{
+        border-radius: 0px;
+    }
+
+    .projet h3{
+        padding: 60px 24px 60px 24px;
+    }
+
+    .text-projet{
+        padding: 24px;
+    }
+    .carousel-buttons {
+        padding: 0px 24px 32px 24px;
+    }
+
+    .carousel img{
+        border-radius: 0px;
+    }
+
+    .fin-projets{
+        padding: 24px 24px 40px 24px ;
+    }
+
+    .text-fin{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+/* -------------------------- Mobile -  Formulaire  ---------------------------------- */
+
+    .block-formulaire{
+        margin: 24px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .carousel-container img{
+        height: 500px;
+    }
+}
