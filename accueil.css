@@ -311,7 +311,7 @@ label{
     padding-top: 8px;
 }
 
-.text-logiciel .logo{
+.logo {
     display: flex;
     justify-content: center;
     width: 40px;
@@ -394,7 +394,7 @@ label{
     min-width: 100%;
 }
 
-.carousel img {
+.carousel-container img {
     width: 100%;
     height: 539px;
     object-fit: cover;
@@ -411,7 +411,8 @@ label{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 16px;
+    width: 100%;
+    max-width: 540px;
 }
 
 .text-projet img {
@@ -421,11 +422,32 @@ label{
 
 .carousel-buttons {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: end;
     gap: 8px;
-    /* margin-top: 10px; */
-    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: auto;
+    padding: 0 8px 16px 8px;
+    z-index: 2;
 }
+
+.carousel-content-wrapper{
+    position: relative;
+    height: 542px;
+}
+
+.prototype {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
 .prev, .next {
     width: 72px;
     height: 72px;
@@ -488,6 +510,7 @@ label{
         padding-bottom: 80px;
     }
 
+
 }
 
 
@@ -537,6 +560,8 @@ label{
         transition: transform 0.3s ease;
     }
 
+    
+
 /* -------------------------- Mobile -  Section mes projets  ---------------------------------- */
 
     .projet{
@@ -555,10 +580,28 @@ label{
     }
 
     .text-projet{
-        padding: 24px;
+        flex-direction: column;
+        padding: 48px 24px 24px 24px;
+        max-width: none;
     }
+
+    .carousel-content-wrapper {
+    position: relative;
+    height: 500px;
+}
+    
     .carousel-buttons {
-        padding: 0px 24px 32px 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        gap: 8px;
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        left: auto;
+        width: auto;
+        padding: 0 16px 16px 8px;
+        z-index: 2;
     }
 
     .carousel img{
@@ -573,6 +616,7 @@ label{
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
+
 /* -------------------------- Mobile -  Formulaire  ---------------------------------- */
 
     .block-formulaire{
@@ -581,9 +625,25 @@ label{
 
 }
 
+
+/* ADAPTATION TAILLE MOBILE REFERENCE : Android medium W:400PX */
+
 @media screen and (max-width: 400px){
-    
+
     .carousel-container img{
         height: 500px;
     }
+
+    .carousel-buttons {
+        position: absolute;
+        justify-content: right;
+        padding: 16px 16px 0 0;
+        width: 100%;
+        bottom: 16px;
+    }
+
+    .text-projet{
+        padding: 24px;
+    }
+    
 }
