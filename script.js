@@ -66,7 +66,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 });
 
 
-// Gère la taille automatiquement pour textearea
+// Gère la taille automatiquement pour textearea (formulaire - message)
 
 document.addEventListener('input', function (event) {
     if (event.target.tagName.toLowerCase() !== 'textarea') return;
@@ -75,3 +75,9 @@ document.addEventListener('input', function (event) {
     textarea.style.height = 'auto'; // Réinitialise la hauteur
     textarea.style.height = textarea.scrollHeight + 'px'; // Ajuste à la hauteur du contenu
 });
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
