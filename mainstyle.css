@@ -107,7 +107,6 @@ body{
     align-items: center;
     font-size: 1rem; color: var(--primary-light-color); font-family: "Lato";
     gap: 64px;
-    padding: 2vw;
 }
 
 section {
@@ -181,6 +180,166 @@ a img {
 button:hover {
     cursor: pointer;
 }
+
+
+/* ------------CAROUSSEL------------- */
+
+#mes-projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('Images/BG-section.png');
+    width: fit-content;
+}
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding: 0px 60px 120px 60px;
+    margin: 0px 80px 0px 80px;
+}
+
+.projet h3{
+    padding: 120px 0px 120px 0px;
+}
+
+.projet h5{
+    font-family: "NTfabulous";
+    font-size: 1.5rem;
+}
+
+#crs-freetime{
+    padding-bottom: 32px;
+}
+
+#crs-freetime h6{
+    background-image: linear-gradient(45deg,#ff942f, #ff409c);
+    background-clip: text;
+    background-size: 100% 100%; /* Ajuste la taille du gradient */
+    background-position: center; /* Centre le gradient */
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Évite que le gradient prenne toute la largeur */
+}
+
+.fin-projets{
+    padding: 56px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-fin{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 941px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    gap: 16px;
+}
+.carousel-container {
+    display: flex;
+    width: 100%;
+    max-width: 941px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 539px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titre {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.text-projet {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.text-projet img {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: auto;
+    padding: 0 8px 16px 8px;
+    z-index: 2;
+}
+
+.carousel-content-wrapper{
+    position: relative;
+    height: 542px;
+}
+
+.prototype {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.prev, .next {
+    width: 72px;
+    height: 72px;
+    color: var(--primary-light-color);
+    background-color: var(--background-dark);
+    border-style: solid;
+    border-radius: 300px;
+    border-color: var(--secondary-purple-lighter-flash);
+    border-width: 1px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--secondary-purple-light-color);
+    color: var(--background-dark)
+} 
+
+
+
+
+
+
+
+
+
+
 
 /* ADAPTATION TAILLE DEVICE REFERENCE : iPad Pro W:1024PX */
 
