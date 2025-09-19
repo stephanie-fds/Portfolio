@@ -442,6 +442,11 @@ label{
         max-width: none;
     }
 
+    .carousel-content-wrapper {
+    position: relative;
+    height: 500px;
+}
+
     
     .carousel-buttons {
         display: flex;
@@ -483,7 +488,7 @@ label{
 
 @media screen and (max-width: 400px){
 
-    .carousel-container img{
+    .carousel-container img, picture{
         height: 500px;
     }
 

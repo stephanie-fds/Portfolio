@@ -40,6 +40,6 @@ section{
     gap: 16px;
 }
 
-.carousel, .carousel-container {
+.carousel, .carousel-container, picture {
     max-width: 100vw;
 }

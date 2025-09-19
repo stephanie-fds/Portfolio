@@ -255,7 +255,7 @@ button:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
+.carousel-item, picture {
     min-width: 100%;
 }
 
