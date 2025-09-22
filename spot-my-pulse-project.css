@@ -2,10 +2,14 @@ img, header{
     width: 100%;
 }
 
+h2 {
+    color: var(--secondary-purple-lighter-flash);
+}
+
 section{
     width: 100%;
-    padding: 0px 80px 0px 80px;
-    gap: 32px;
+    padding: 40px 80px 40px 80px;
+    gap: 48px;
 }
 
 .context{
@@ -34,12 +38,49 @@ section{
     align-items: center;
 }
 
+.frictions, .ma-solution{
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+    max-width: 500px;
+}
+
 .wrapper-row{
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.carousel, .carousel-container, picture {
-    max-width: 100vw;
+.solution-cards{
+    display: flex;
+    flex-direction: column;
+    max-width: 405px ;
+    background: #23264E;
+    background: linear-gradient(180deg,rgba(35, 38, 78, 1) 0%, rgba(70, 13, 70, 1) 100%);
+    padding: 32px;
+    border-radius: 20px;
+    gap: 24px;
+}
+
+header .prototype {
+    width: 100vw;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 700px){
+    section{
+        padding: 24px;
+    }
+
+    .solution-cards{
+        max-width: fit-content;
+    }
+
+    .mark-section{
+        max-width: 0px;
+    }
+
 }
