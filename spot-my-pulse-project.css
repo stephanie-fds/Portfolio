@@ -21,6 +21,8 @@ section{
     display: flex;
     flex-direction: row;
     gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .mark-section{
@@ -69,6 +71,10 @@ header .prototype {
     justify-content: center;
 }
 
+.prototype {
+    padding: 0px 24px 0px 24px;
+}
+
 
 @media screen and (max-width: 700px){
     section{
@@ -81,6 +87,13 @@ header .prototype {
 
     .mark-section{
         max-width: 0px;
+    }
+
+    .scope{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
     }
 
 }

@@ -407,9 +407,9 @@ button.social-links:hover{
 }
 
 
-/* ADAPTATION TAILLE MOBILE REFERENCE : Android medium W:400PX */
+/* ADAPTATION TAILLE MOBILE REFERENCE : Android medium W:450PX */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
 
     .carousel-container img, picture{
         height: 500px;
