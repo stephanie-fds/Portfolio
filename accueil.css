@@ -94,7 +94,7 @@ section{
     width: fit-content;
 }
 
-button.social-links{
+button.social-links, a.social-links{
     display: flex;
     align-items: center;
     height: fit-content;
@@ -105,7 +105,7 @@ button.social-links{
     font-size: 0px;
 }
 
-button.social-links:hover{
+button.social-links:hover, a.social-links:hover{
     border-color: var(--tertiary-orange);
     font-size: 1rem;
     gap: 8px;
